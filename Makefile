@@ -7,7 +7,8 @@ SOURCES = \
 	src/input.c \
 	src/timer.c \
 	src/dma.s \
-	src/log.c
+	src/log.c \
+	src/irqu.c
 
 
 INCLUDES = \

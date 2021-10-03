@@ -77,6 +77,9 @@ extern u16 irqEnable(u16 intr_flags);
 extern u16 irqDisable(u16 intr_flags);
 extern u16 irqSetEnabled(u16 intr_flags);
 
+extern void irqAddHandler(u16 intr_flags, void *func, u16 priority);
+extern void irqRemoveHandler(u16 intr_flags);
+
 extern void svcIntrWait(bool wait_next, u16 intr_flags);
 
 enum IntrWaitExFlags

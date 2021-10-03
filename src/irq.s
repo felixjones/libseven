@@ -3,10 +3,9 @@
 
 .include        "asm_base.s"
 
-.align          2
 data IRQ_TABLE rw
-    .fill       14, 8, 0
-    .word       0
+    .align      2
+    .fill       15, 8, 0
 endd
 
 @ r0    REG_BASE
